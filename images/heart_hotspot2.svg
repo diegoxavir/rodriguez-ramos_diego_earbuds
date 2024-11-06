@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1366 768">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 0px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-2 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 72px;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="412.84" y="130.99" width="274.16" height="484.22"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-1" x="687" y="130.99" width="274.16" height="484.22"/>
+    </clipPath>
+  </defs>
+  <g id="_Mirror_Repeat_" data-name="&amp;lt;Mirror Repeat&amp;gt;">
+    <g class="cls-4">
+      <path class="cls-2" d="M703,580s-244.17-51.88-254-266.65c-7.11-155.38,217.1-229.9,274-3.35"/>
+    </g>
+  </g>
+  <g id="_Mirror_Repeat_-2" data-name="&amp;lt;Mirror Repeat&amp;gt;">
+    <g class="cls-3">
+      <path class="cls-2" d="M671,580s244.17-51.88,254-266.65c7.11-155.38-217.1-229.9-274-3.35"/>
+    </g>
+  </g>
+</svg>

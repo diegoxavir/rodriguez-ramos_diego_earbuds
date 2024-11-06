@@ -1,0 +1,80 @@
+model-viewer {
+    width: auto;
+    max-width: 1200px;
+    height: 780px;
+    background-color: #f09595;
+    margin: 0 auto;
+    transform: translateY(20%);
+}
+
+//customize our own hotspot
+
+.Hotspot {
+    background: url(../images/heart_hotspot2.svg) center no-repeat;
+    border: 0;
+    width: 75px;
+    height: 48px;
+}
+
+.Hotspot:not([data-visible]) {
+opacity: 0;
+pointer-events: none;
+  }
+  
+  .Hotspot:focus {
+    border: 4px solid rgb(0, 128, 200);
+    height: 32px;
+    outline: none;
+    width: 32px;
+  }
+
+  .HotspotAnnotation{
+    visibility: hidden;
+    background: #ffabab;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    display: block;
+    font-family: Futura, Helvetica Neue, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    left: calc(100% + 1em);
+    max-width: 128px;
+    overflow-wrap: break-word;
+    padding: 0.5em 1em;
+    position: absolute;
+    top: 50%;
+    width: max-content;
+    text-shadow: #333 1px 0 2px;
+  }
+
+  .Hotspot:not([data-visible]) > * {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(calc(-50% + 4px));
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  .HotspotAnnotation p {
+    color: #333;
+    line-height: 22px;
+    font-weight: 300;
+  }
+  
+  .HotspotAnnotation h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  #hotspot_bottom {
+    top: -200%;
+  }
+
+  //cusomize progress bar 
+  model-viwer::part(default-progress-bar) {
+    height: 30px;
+    background-color: #E89B36;
+    
+  }
+
+  
