@@ -1,13 +1,34 @@
-// Handles loading the events for <model-viewer>'s slotted progress bar
-const onProgress = (event) => {
-    const progressBar = event.target.querySelector('.progress-bar');
-    const updatingBar = event.target.querySelector('.update-bar');
-    updatingBar.style.width = `${event.detail.totalProgress * 100}%`;
-    if (event.detail.totalProgress === 1) {
-      progressBar.classList.add('hide');
-      event.target.removeEventListener('progress', onProgress);
-    } else {
-      progressBar.classList.remove('hide');
-    }
-  };
-  document.querySelector('model-viewer').addEventListener('progress', onProgress);
+(() => {
+  console.log("IIFE Fired");
+
+
+  //variables
+  const hotspots = document.querySelectorAll('.Hotspot');
+  console.log(hotspots);
+
+
+//functions
+function showInfo(e) {
+  //console.log("show info called");
+  let selected  = document.querySelector(`button[slot="${e.currentTarget.slot}"] > div`);
+
+  gsap.to(selected, 1, {autoAlpha: 1});
+}
+
+function hideInfo(e) {
+  //console.log("hide into called");
+  let selected = document.querySelector(`button[slot="${e.currentTarget.slot}"] > div`)
+  gsap.to(selected, 1, {autoAlpha: 0});
+}
+
+
+
+//event listeners
+hotspots.forEach(hotspot => {
+  hotspot.addEventListener("mouseover", showInfo);
+  hotspot.addEventListener("mouseleave", hideInfo);
+})
+
+
+
+})();
