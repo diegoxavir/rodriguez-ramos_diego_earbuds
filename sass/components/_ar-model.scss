@@ -33,7 +33,6 @@ pointer-events: none;
     background: #ffabab;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-    color: #fff;
     display: block;
     font-family: Futura, Helvetica Neue, sans-serif;
     font-size: 18px;
@@ -45,7 +44,7 @@ pointer-events: none;
     position: absolute;
     top: 50%;
     width: max-content;
-    text-shadow: #333 1px 0 2px;
+
   }
 
   .Hotspot:not([data-visible]) > * {
@@ -56,9 +55,10 @@ pointer-events: none;
   }
   
   .HotspotAnnotation p {
-    color: #333;
+    color: #fff;
     line-height: 22px;
     font-weight: 300;
+    text-shadow: #333 1px 0 2px;
   }
   
   .HotspotAnnotation h2 {
