@@ -41,16 +41,20 @@ pointer-events: none;
     font-size: 12px;
     font-weight: 700;
     left: calc(60% + 1em);
-    max-width: 80px;
+    max-width: 100px;
     overflow-wrap: break-word;
     padding: 0.5em 1em;
     position: absolute;
     top: 50%;
     width: max-content;
       img {
-        width: 100%;
+        width: 70%;
         margin: auto;
       }
+  }
+
+  #hotspot2 {
+    top: -100%;
   }
 
   .Hotspot:not([data-visible]) > * {
@@ -68,8 +72,11 @@ pointer-events: none;
   }
   
   .HotspotAnnotation h2 {
-    font-size: 18px;
-    margin-bottom: 5px;
+    font-size: 13px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    text-shadow: #333 1px 0 2px;
+    color: #fff;
   }
 
   #hotspot_bottom {
@@ -95,17 +102,24 @@ pointer-events: none;
     }
 
     .HotspotAnnotation {
-      max-width: 128px;
+      max-width: 159px;
       left: calc(100% + 1em);
       font-size: 18px;
       img {
         margin: auto;
       }
     }
-    #hotspot_1 {
+    #hotspot1 {
       top: -260%;
     }
-  
+    .HotspotAnnotation h2 {
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
+
+    #hotspot_bottom {
+      top: -520%;
+    }
   
   }
 
