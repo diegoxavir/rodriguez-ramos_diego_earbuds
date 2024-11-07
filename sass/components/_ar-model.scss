@@ -1,7 +1,10 @@
+
+
+
 model-viewer {
     width: auto;
     max-width: 1200px;
-    height: 780px;
+    height: 360px;
     background-color: #f09595;
     margin: 0 auto;
     transform: translateY(20%);
@@ -35,16 +38,19 @@ pointer-events: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
     display: block;
     font-family: Futura, Helvetica Neue, sans-serif;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 700;
-    left: calc(100% + 1em);
-    max-width: 128px;
+    left: calc(60% + 1em);
+    max-width: 80px;
     overflow-wrap: break-word;
     padding: 0.5em 1em;
     position: absolute;
     top: 50%;
     width: max-content;
-
+      img {
+        width: 100%;
+        margin: auto;
+      }
   }
 
   .Hotspot:not([data-visible]) > * {
@@ -67,7 +73,7 @@ pointer-events: none;
   }
 
   #hotspot_bottom {
-    top: -200%;
+    top: -420%;
   }
 
   //cusomize progress bar 
@@ -76,5 +82,32 @@ pointer-events: none;
     background-color: #E89B36;
     
   }
+
+  @media screen and (min-width: 768px) {
+    model-viewer {
+      height: 620px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    model-viewer {
+      height: 780px;
+    }
+
+    .HotspotAnnotation {
+      max-width: 128px;
+      left: calc(100% + 1em);
+      font-size: 18px;
+      img {
+        margin: auto;
+      }
+    }
+    #hotspot_1 {
+      top: -260%;
+    }
+  
+  
+  }
+
 
   
