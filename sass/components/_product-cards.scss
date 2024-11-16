@@ -1,0 +1,29 @@
+
+
+#products {
+    width: 1200px;
+    margin: auto;
+}
+
+.product-card {
+    width: 305.45px;
+
+    img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1920px) { 
+
+    #products {
+        width: 1600px;
+        margin: auto;
+    }
+    .product-card {
+        width: 414.45px;
+    
+        img {
+            width: 100%;
+        }
+    }
+}

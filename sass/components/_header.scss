@@ -1,0 +1,22 @@
+@use '../abstracts/variables' as v;
+
+header {
+    background-color: v.$primary-color;
+    display: flex;
+    width: 100%;
+        .logo {
+            height: 34px;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: 20px;
+        }
+        ul {
+            align-self: right;
+            li {
+            display: inline;
+            position: relative;
+            left: 720px;
+        }
+    }
+}
+

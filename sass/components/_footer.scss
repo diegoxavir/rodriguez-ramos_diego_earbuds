@@ -1,0 +1,49 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+
+ footer {
+    height: 716px;
+    @include m.gradient-3;
+    .logo {
+        height: 34px;
+    }
+    .letter-img {
+        width: 100%;
+    }
+    H2 {
+        color: white;
+        margin-bottom: 17px;
+    }
+    label {
+        text-align: center;
+    }
+
+    input {
+        margin-bottom: 86px;
+        height: 53px;
+        border-radius: 30px;
+        border: solid black 3px;
+    }
+ }
+
+ ul {
+    padding: 0;
+    margin-top: 0;
+    li {
+    list-style: none;
+    text-align: left;}
+    color: white;
+    font-size: 1.25em;
+ }
+
+ .footer-grid {
+    width: 1200px;
+    margin: auto;
+    padding-top: 224px;
+ }
+
+ .socials {
+    margin-top: 38.2px;
+ }
+

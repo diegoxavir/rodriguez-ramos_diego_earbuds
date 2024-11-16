@@ -5,13 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/main.css" rel="stylesheet"/>
+    <link href="css/grid.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <!-- link to greensock main library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
   </head>
   <body>
 
     <header>
-      <img src="images/logo_white.png" alt="mochy spelled out">
+      <img class="logo" src="images/logo_white.png" alt="mochy spelled out">
       <ul>
         <li><a href="*">SHOP</a></li>
         <li><a href="*">SUPPORT</a></li>
@@ -20,29 +24,29 @@
 
     <main>
 
-    <div class="home_banenr">
-      <img src="images/banner.webp" alt="two Mochy earbuds on a backdrop.">
+    <div class="home_banner">
+      <img src="images/banner-long.webp" alt="two Mochy earbuds on a backdrop.">
     </div>
-
+<div class="gradient-1"></div>
     <h2>SHOP NOW</h2>
 
-      <div class="products grid-con">
-        <div class="product-card" id="green-pod">
-          <img src="" alt="">
-          <h4>MOCHY PODS<br>-GREEN</h4>
-          <p>$120</p>
+      <div class="grid-con" id="products">
+        <div class="product-card l-col-start-2 l-col-span-3" id="green-pod">
+          <img src="images/thumb-green-2.webp" alt="green mochy pods halfway in a green case.">
+          <h3>MOCHY PODS<br>-GREEN</h3>
+          <h4>$120</h4>
         </div>
 
-        <div class="product-card" id="pink-pod">
-          <img src="" alt="">
-          <h4>MOCHY PODS<br>-GREEN</h4>
-          <p>$120</p>
+        <div class="product-card l-col-span-3" id="pink-pod">
+          <img src="images/thumb-pink-2.webp" alt="pink mochy pods halfway in a pink case.">
+          <h3>MOCHY PODS<br>-GREEN</h3>
+          <h4>$120</h4>
         </div>
 
-        <div class="product-card" id="blue-pod">
-          <img src="" alt="">
-          <h4>MOCHY PODS<br>-GREEN</h4>
-          <p>$120</p>
+        <div class="product-card l-col-span-3" id="blue-pod">
+          <img src="images/thumb-blue-2.webp" alt="blue mochy pods halfway in a blue case.">
+          <h3>MOCHY PODS<br>-GREEN</h3>
+          <h4>$120</h4>
         </div>
       </div>
 
@@ -51,6 +55,25 @@
     </div>
 
     <h2>GET TO KNOW MOCHY</h2>
+
+    <div class="xray-div">
+      <div class="col-span-full">
+        <div id="mobile-tablet-view">
+            <img src="images/earbud-xray02.png" alt="xray view of earbuds">
+            <img src="images/earbud-xray01.png" alt="regular view of earbud">
+
+            
+        </div>
+        <div id="comparison-con">
+            <div id="xray">
+                <div id="divisor"></div>
+            </div>
+            <input type="range" min="0" max="100" value="50" id="slider">
+        </div>
+    </div>
+    </div>
+
+    <div class="gradient-2"></div>
 
     <section class="vr model">
     <model-viewer src="model/earbud.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="images/poster.webp" shadow-intensity="0.91" environment-image="images/small_empty_room_3_4k.hdr" shadow-softness="1">
@@ -75,62 +98,59 @@
       </model-viewer>  
     </section>
 
-    <div>
-      <section>
-        <h4>BIG BATTERY</h4>
+    <div class="feature-div">
+      <section class="features">
+        <img src="images/battery_square.jpg" alt="5H typed with a half circle around the top.">
+        <h3>BIG <br>BATTERY</h3>
         <p>UP TO 5H OF BATTERY PER CHARGE</p>
       </section>
 
-      <section>
-        <h4>TOUCH CONTROLS</h4>
+      <section class="features">
+        <img src="images/touch_square.jpg" alt="a hand touching the back of the earpod.">
+        <h3>TOUCH CONTROLS</h3>
         <p>TOUCH CONTROLS FOR EASY LISTENING</p>
       </section>
 
-      <section>
-        <h4>WATER PROOF</h4>
+      <section class="features">
+        <img src="images/water_square.jpg" alt="water dropplets.">
+        <h3>WATER <br>PROOF</h3>
         <p>SWEAT AND WATER RESISTANT</p>
       </section>
 
-      <section>
-        <h4>TOUCH CONTROLS</h4>
-        <p>TOUCH CONTROLS FOR EASY LISTENING</p>
+      <section class="features">
+        <img src="images/anc_square.jpg" alt="sound waves on top of a person's head.">
+        <h3>AND & TRANSPARENCY</h3>
+        <p>State Of The Art Noise Cancellation and Transparency</p>
       </section>
     </div>
 
-    <div class="xray-div">
-      <div class="col-span-full">
-        <div id="mobile-tablet-view">
-            <img src="images/earbud-xray02.png" alt="xray view of earbuds">
-            <img src="images/earbud-xray01.png" alt="regular view of earbud">
 
-            
-        </div>
-        <div id="comparison-con">
-            <div id="xray">
-                <div id="divisor"></div>
-            </div>
-            <input type="range" min="0" max="100" value="50" id="slider">
-        </div>
-    </div>
-    </div>
 
   </main>
 
   <footer>
+    <div class="grid-con footer-grid">
+    <div class="l-col-start-3 l-col-end-5">
+      <h2>SUPPORT</h2>
     <ul>
-      <li>link</li>
-      <li>link</li>
+      <li>LINK</li>
+      <li>LINK</li>
     </ul>
+  </div>
+  <div>
+    <H2>ABOUT</H2>
     <ul>
-      <li>link</li>
-      <li>link</li>
+      <li>LINK</li>
+      <li>LINK</li>
     </ul>
-    <div>
-      <img src="images/logo_white.png" alt="mochy spelled out.">
+  </div>
+    <div class="socials l-col-start-8 l-col-end-11">
+      <img class="logo" src="images/logo_white.png" alt="mochy spelled out.">
     </div>
-    <img src="images/letter.svg" alt="an evelope.">
-    <label for="email">SUBSCRIBE TO OUR NEWSLETTER!</label>
-    <input type="email" id="email" pattern=".+@outlook\.com" size="30" required />
+    <img class="letter-img l-col-start-6 l-col-span-1" src="images/letter.svg" alt="an evelope.">
+    <label class="l-col-span-full" for="email">SUBSCRIBE TO OUR NEWSLETTER!</label>
+    <input class="email-bar l-col-start-4 l-col-end-9" type="email" id="email" pattern=".+@outlook\.com" size="30" required />
+  </div>
   </footer>
   <!-- Loads <model-viewer> for browsers: -->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
