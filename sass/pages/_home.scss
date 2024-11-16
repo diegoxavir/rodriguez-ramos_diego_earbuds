@@ -1,0 +1,28 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+
+
+.gradient-1 {
+    @include m.gradient-1;
+    height: 112px;
+}
+
+.gradient-2 {
+    @include m.gradient-2;
+    height: 341px;
+}
+
+h2 {
+    text-align: center;
+}
+
+h2, .features h3 {
+    color: v.$primary-color;
+}
+
+.xray-div {
+    img {
+        width: 100%;
+    }
+}

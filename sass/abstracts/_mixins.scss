@@ -27,3 +27,17 @@
     display: flex;
     justify-content: center;
 }
+
+@mixin gradient-1 {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,164,197,1) 100%);
+}
+
+@mixin gradient-2 {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,203,221,1) 100%);
+}
+@mixin gradient-3 {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,177,208,1) 21%);
+}
