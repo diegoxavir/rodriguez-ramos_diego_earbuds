@@ -10,6 +10,49 @@
   </head>
   <body>
 
+    <header>
+      <img src="images/logo_white.png" alt="mochy spelled out">
+      <ul>
+        <li><a href="*">SHOP</a></li>
+        <li><a href="*">SUPPORT</a></li>
+      </ul>
+    </header>
+
+    <main>
+
+    <div class="home_banenr">
+      <img src="images/banner.webp" alt="two Mochy earbuds on a backdrop.">
+    </div>
+
+    <h2>SHOP NOW</h2>
+
+      <div class="products grid-con">
+        <div class="product-card" id="green-pod">
+          <img src="" alt="">
+          <h4>MOCHY PODS<br>-GREEN</h4>
+          <p>$120</p>
+        </div>
+
+        <div class="product-card" id="pink-pod">
+          <img src="" alt="">
+          <h4>MOCHY PODS<br>-GREEN</h4>
+          <p>$120</p>
+        </div>
+
+        <div class="product-card" id="blue-pod">
+          <img src="" alt="">
+          <h4>MOCHY PODS<br>-GREEN</h4>
+          <p>$120</p>
+        </div>
+      </div>
+
+      <div class="col-span-full">
+        <canvas id="explode-view"></canvas> 
+    </div>
+
+    <h2>GET TO KNOW MOCHY</h2>
+
+    <section class="vr model">
     <model-viewer src="model/earbud.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="images/poster.webp" shadow-intensity="0.91" environment-image="images/small_empty_room_3_4k.hdr" shadow-softness="1">
         <button class="Hotspot" slot="hotspot-1" data-position="0.003499529227009565m 1.0302096611203804m 0.1507938355207441m" data-normal="0m 0m 1m" data-visibility-attribute="visible">
             <div id="hotspot1" class="HotspotAnnotation"></div>
@@ -30,7 +73,65 @@
             <img src="images/ar_hand_prompt.png">
         </div>-->
       </model-viewer>  
+    </section>
 
+    <div>
+      <section>
+        <h4>BIG BATTERY</h4>
+        <p>UP TO 5H OF BATTERY PER CHARGE</p>
+      </section>
+
+      <section>
+        <h4>TOUCH CONTROLS</h4>
+        <p>TOUCH CONTROLS FOR EASY LISTENING</p>
+      </section>
+
+      <section>
+        <h4>WATER PROOF</h4>
+        <p>SWEAT AND WATER RESISTANT</p>
+      </section>
+
+      <section>
+        <h4>TOUCH CONTROLS</h4>
+        <p>TOUCH CONTROLS FOR EASY LISTENING</p>
+      </section>
+    </div>
+
+    <div class="xray-div">
+      <div class="col-span-full">
+        <div id="mobile-tablet-view">
+            <img src="images/earbud-xray02.png" alt="xray view of earbuds">
+            <img src="images/earbud-xray01.png" alt="regular view of earbud">
+
+            
+        </div>
+        <div id="comparison-con">
+            <div id="xray">
+                <div id="divisor"></div>
+            </div>
+            <input type="range" min="0" max="100" value="50" id="slider">
+        </div>
+    </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <ul>
+      <li>link</li>
+      <li>link</li>
+    </ul>
+    <ul>
+      <li>link</li>
+      <li>link</li>
+    </ul>
+    <div>
+      <img src="images/logo_white.png" alt="mochy spelled out.">
+    </div>
+    <img src="images/letter.svg" alt="an evelope.">
+    <label for="email">SUBSCRIBE TO OUR NEWSLETTER!</label>
+    <input type="email" id="email" pattern=".+@outlook\.com" size="30" required />
+  </footer>
   <!-- Loads <model-viewer> for browsers: -->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
     <script src="js/main.js"></script>
