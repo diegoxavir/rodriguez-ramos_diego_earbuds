@@ -5,7 +5,7 @@ model-viewer {
     width: auto;
     max-width: 1200px;
     height: 360px;
-    background-color: #f09595;
+    background-color: #ffffff;
     margin: 0 auto;
     transform: translateY(20%);
 }
@@ -33,7 +33,7 @@ pointer-events: none;
 
   .HotspotAnnotation{
     visibility: hidden;
-    background: #ffabab;
+    background: #ffc4d8;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
     display: block;
