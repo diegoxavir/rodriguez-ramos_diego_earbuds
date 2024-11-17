@@ -1,0 +1,24 @@
+.pin-spacer {
+    width: 100%;
+}
+
+canvas {
+    width: 100%;
+}
+
+.photo-scrub {
+    overflow: hidden;
+}
+
+.scrub-grid {
+    width: 1200px;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 600px;
+}
+
+@media screen and (min-width: 1920px) { 
+    .scrub-grid {
+        width: 1600px;
+    }
+}
