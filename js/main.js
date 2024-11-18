@@ -73,3 +73,74 @@
     gsap.to(selected, 1, { autoAlpha: 0 });
   }
 })();
+
+
+//photoscrub
+
+
+(() => {
+    const canvas = document.querySelector("#explode-view");
+    const context = canvas.getContext("2d");
+
+    canvas.width = 1920;
+    canvas.height = 1080;
+
+    const frameCount = 201; //how many frames do we have
+
+    const images = []; //array to hold all of our images
+
+    //create an object called buds to hold the current frame
+    const buds = {
+        frame: 0
+    }
+
+    //run a for loop to populate image array
+    for(let i = 0; i < frameCount; i++) {
+        const img = new Image();
+        img.src = `images/scene1-${(i+1000).toString().padStart(4, '0')}.jpg`;
+        images.push(img)
+    }
+
+    //console.table(images);
+
+    gsap.to(buds, {
+        frame: 200,
+        snap: "frame",
+        scrollTrigger: {
+            trigger: "#explode-view",
+            pin: true,
+            //smoothness
+            scrub: 1, 
+            markers: true,
+            start: "top top"
+        },
+        onUpdate: render
+    })
+
+    images[0].addEventListener("load", render)
+
+    function render() {
+        context.clearRect(0,0, canvas.width, canvas.height);
+        //console.log(buds.frame);
+        console.log(images [buds.frame]);
+        context.drawImage(images[buds.frame], 0, 0);
+        }
+
+})();
+
+(() => {
+  
+  const divisor = document.querySelector("#divisor");
+  const slider = document.querySelector("#slider");
+
+  function moveDivisor(){
+      console.log(slider.value); //pulls the value of the slider
+      //digging into the style property to adjust the width
+      divisor.style.width = slider.value+"%";
+  }
+
+  //listening for the user to slide and calling the function move divisor
+  slider.addEventListener("input", moveDivisor)
+
+
+})();

@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <header>
-      <img class="logo" src="images/logo_white.png" alt="mochy spelled out">
-      <ul>
+    <header class="grid-con">
+      <img class="l-col-start-2 logo" src="images/logo_white.png" alt="mochy spelled out">
+      <ul class="l-col-start-9 l-col-end-11">
         <li><a href="*">SHOP</a></li>
         <li><a href="*">SUPPORT</a></li>
       </ul>
@@ -50,30 +50,16 @@
         </div>
       </div>
 
-      <div class="col-span-full">
-        <canvas id="explode-view"></canvas> 
-    </div>
-
+      <div class="scrub-grid">
+          <div class="photo-scrub col-span-full">
+            <canvas id="explode-view"></canvas> 
+        </div>
+      </div>
     <h2>GET TO KNOW MOCHY</h2>
+    
 
-    <div class="xray-div">
-      <div class="col-span-full">
-        <div id="mobile-tablet-view">
-            <img src="images/earbud-xray02.png" alt="xray view of earbuds">
-            <img src="images/earbud-xray01.png" alt="regular view of earbud">
 
-            
-        </div>
-        <div id="comparison-con">
-            <div id="xray">
-                <div id="divisor"></div>
-            </div>
-            <input type="range" min="0" max="100" value="50" id="slider">
-        </div>
-    </div>
-    </div>
-
-    <div class="gradient-2"></div>
+    <!-- <div class="gradient-2"></div> -->
 
     <section class="vr model">
     <model-viewer src="model/earbud.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="images/poster.webp" shadow-intensity="0.91" environment-image="images/small_empty_room_3_4k.hdr" shadow-softness="1">
@@ -89,10 +75,11 @@
         <div class="progress-bar hide" slot="progress-bar">
             <div class="update-bar"></div>
         </div>
-        <button slot="ar-button" id="ar-button">
+        <div id="ar-prompt">
+       <!-- <button slot="ar-button" id="ar-button">
             View in your space
         </button>
-        <!--<div id="ar-prompt">
+        <div id="ar-prompt">
             <img src="images/ar_hand_prompt.png">
         </div>-->
       </model-viewer>  
@@ -124,6 +111,23 @@
       </section>
     </div>
 
+    
+<!-- Xray Slider-->
+
+    <h2>GET A CLOSER LOOK</h2>
+
+    <div id="mobile-tablet-view">
+      <img src="images/earbud-xray02.png" alt="xray view of earbuds">
+      <img src="images/earbud-xray01.png" alt="regular view of earbud">
+
+      
+  </div>
+  <div id="comparison-con">
+      <div id="xray">
+          <div id="divisor"></div>
+      </div>
+      <input type="range" min="0" max="100" value="50" id="slider">
+  </div>
 
 
   </main>
@@ -131,29 +135,31 @@
   <footer>
     <div class="grid-con footer-grid">
     <div class="l-col-start-3 l-col-end-5">
-      <h2>SUPPORT</h2>
+      <h3>SUPPORT</h3>
     <ul>
       <li>LINK</li>
       <li>LINK</li>
     </ul>
   </div>
   <div>
-    <H2>ABOUT</H2>
+    <h3>ABOUT</h3>
     <ul>
       <li>LINK</li>
       <li>LINK</li>
     </ul>
   </div>
-    <div class="socials l-col-start-8 l-col-end-11">
+    <div class="socials l-col-start-9 l-col-span-2">
       <img class="logo" src="images/logo_white.png" alt="mochy spelled out.">
     </div>
-    <img class="letter-img l-col-start-6 l-col-span-1" src="images/letter.svg" alt="an evelope.">
-    <label class="l-col-span-full" for="email">SUBSCRIBE TO OUR NEWSLETTER!</label>
-    <input class="email-bar l-col-start-4 l-col-end-9" type="email" id="email" pattern=".+@outlook\.com" size="30" required />
+    <img class="letter-img l-col-start-9 l-col-span-2" src="images/letter.svg" alt="an evelope.">
+    <label class="l-col-start-8 l-col-span-4" for="email">SUBSCRIBE TO OUR NEWSLETTER!</label>
+    <input class="email-bar l-col-start-8 l-col-end-12" type="email" id="email" pattern=".+@outlook\.com" size="30" required />
   </div>
   </footer>
   <!-- Loads <model-viewer> for browsers: -->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

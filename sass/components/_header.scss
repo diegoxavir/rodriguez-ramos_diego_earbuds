@@ -11,11 +11,14 @@ header {
             margin-left: 20px;
         }
         ul {
-            align-self: right;
+            margin-top: 20px;
             li {
+            margin-right: 40px;
             display: inline;
-            position: relative;
-            left: 720px;
+            a {
+            text-decoration: none;
+            color: white;        
+            }
         }
     }
 }
