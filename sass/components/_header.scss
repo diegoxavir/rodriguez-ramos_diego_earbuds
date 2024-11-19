@@ -13,12 +13,17 @@ header {
         .desktop-ul {
             display: none;
         }
+
+        a {
+            text-decoration: none;
+            color: v.$primary-color;        
+            }
 }
 
 @media screen and (min-width: 1200px) {
     header {
             .logo {
-                margin-top: auto;
+                margin-top: 10px;
             }
                 .desktop-ul {
             display: block;
@@ -27,7 +32,6 @@ header {
             margin-right: 40px;
             display: inline;
             a {
-            text-decoration: none;
             color: white;        
             }
         }

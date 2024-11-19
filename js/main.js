@@ -166,7 +166,7 @@
   fadeDivs.forEach(fadeDiv => {
   gsap.to(fadeDiv, {
     autoAlpha: 1,
-    duration: 1,
+    duration: .5,
     scrollTrigger : {
       trigger: fadeDiv,
       start: "top center"

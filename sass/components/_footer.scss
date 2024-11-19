@@ -37,6 +37,10 @@
     display: none;
     }
 
+    a {
+        text-decoration: none;
+        color: white;
+    }
  }
 
 
@@ -79,11 +83,13 @@
             display: block;
             padding: 0;
             margin-top: 0;
-            li {
-            list-style: none;
-            text-align: left;}
-            color: white;
-            font-size: 1.25em;
+                li {
+                list-style: none;
+                font-weight: 600;
+                font-size: 1.25em;
+                text-align: left;
+                margin-top: 10px;
+                }
             }
     }
 
@@ -94,7 +100,6 @@
         margin-bottom: 20px;
         margin: auto;
     }
-
 
 
  .footer-grid {
