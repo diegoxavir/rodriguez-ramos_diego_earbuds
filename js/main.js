@@ -158,3 +158,19 @@
   })
 
 })();
+
+(() => {
+  gsap.registerPlugin(ScrollTrigger);
+  const fadeDivs = document.querySelectorAll(".gsap-fade");
+
+  fadeDivs.forEach(fadeDiv => {
+  gsap.to(fadeDiv, {
+    autoAlpha: 1,
+    duration: 1,
+    scrollTrigger : {
+      trigger: fadeDiv,
+      start: "top center"
+    }
+  })
+})
+})();
