@@ -47,8 +47,8 @@
        display: grid; 
        grid-template-columns: repeat(11, minmax(0, 1fr));
        grid-column-gap: 30px;
-       padding-left: 0px;
-       padding-right: 0px;
+       padding-left: 15px;
+       padding-right: 15px;
        max-width: 1600px;
     }
  
