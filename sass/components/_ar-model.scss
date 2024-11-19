@@ -40,7 +40,7 @@ pointer-events: none;
     font-size: 12px;
     font-weight: 700;
     left: calc(60% + 1em);
-    max-width: 100px;
+    max-width: 110px;
     overflow-wrap: break-word;
     padding: 0.5em 1em;
     position: absolute;
@@ -98,7 +98,7 @@ pointer-events: none;
 
   @media screen and (min-width: 1200px) {
     model-viewer {
-      height: 780px;
+      width: 80%;
     }
 
     .HotspotAnnotation {
@@ -110,7 +110,7 @@ pointer-events: none;
       }
     }
     #hotspot1 {
-      top: -260%;
+      top: -100%;
     }
     .HotspotAnnotation h2 {
       font-size: 22px;
