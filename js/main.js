@@ -111,7 +111,7 @@
             pin: true,
             //smoothness
             scrub: 1, 
-            markers: true,
+            markers: false,
             start: "top top"
         },
         onUpdate: render

@@ -3,6 +3,13 @@
     display: none;
   }
   
+  #mobile-tablet-view{
+    img {
+      width: 100%;
+    }
+  }
+
+
   @media screen and (min-width: 1200px) {
     
     #mobile-tablet-view{

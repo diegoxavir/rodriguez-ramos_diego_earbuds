@@ -2,11 +2,11 @@
 @use '../abstracts/mixins' as m;
 
 
-
 .gradient-1 {
-    @include m.gradient-1;
+    @include m.gradient-1-mobile;
     height: 112px;
 }
+
 
 .gradient-2 {
     @include m.gradient-2;
@@ -30,4 +30,15 @@ h2, .features h3 {
 .photo-scrub {
     width: 100%;
     height: 100%;
+}
+
+.gsap-marker-scroll-end, .gsap-marker-scroll-start {
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    .gradient-1 {
+        @include m.gradient-1;
+        height: 112px;
+    }
 }
