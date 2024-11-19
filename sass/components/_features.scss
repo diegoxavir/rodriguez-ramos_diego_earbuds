@@ -23,7 +23,7 @@
 @media screen and (min-width: 1200px) {
     .feature-div {
     display: flex;
-    justify-content: center;
+    justify-items: center;
 }
 
 .features {
@@ -38,7 +38,7 @@
         display: block;
     }
     h3 {
-        font-size: 1.5em;
+        font-size: 1.25em;
     }
 }
 }
