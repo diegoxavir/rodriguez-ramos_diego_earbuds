@@ -4,16 +4,46 @@
 }
 
 .features {
-    margin: 93px 30px;
-    width: 188px;
+    margin: auto;
+    margin-top: 30px;
+    width: 70%;
     text-align: center;
     img {
-        height: 188px;
+        width: 70%;
+    }
+    p {
+        display: none;
+    }
+    h3 {
+        margin: auto;
+        font-size: 1em;
     }
 }
 
 @media screen and (min-width: 1200px) {
+    .feature-div {
+    display: flex;
+    justify-content: center;
+}
+
+.features {
+    margin: 93px 0px;
+    width: 188px;
+    text-align: center;
+    img {
+        height: 188px;
+        width: 100%;
+    }
+    p {
+        display: block;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+}
+}
+@media screen and (min-width: 1200px) {
     .features {
-        margin: 93px 70px;
+        margin: 93px 0px;
     }
 }

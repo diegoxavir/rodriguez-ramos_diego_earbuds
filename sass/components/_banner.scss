@@ -1,5 +1,22 @@
+@use '../abstracts/variables' as v;
+
 .home_banner {
-    background-color: #ffa4c5;
+    background-color: v.$primary-color;
     img {
     width: 100%;}
+    .desktop-banner {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .home_banner {
+    background-color: #ffa4c5;
+    .desktop-banner {
+        display: block;
+    }
+    .mobile-banner {
+        display: none;
+    }
+}
 }

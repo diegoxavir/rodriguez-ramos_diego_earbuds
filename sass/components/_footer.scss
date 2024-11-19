@@ -1,38 +1,80 @@
 @use '../abstracts/variables' as v;
 @use '../abstracts/mixins' as m;
 
+.footer-grid {
+    padding-top: 130px;
+}
 
  footer {
-    height: 616px;
+    margin-top: 80px;
+    height: 450px;
     @include m.gradient-3;
     .logo {
         width: 100%;
+        margin-top: 20px;
     }
-    .letter-img {
-        width: 30%;
-        margin-top: 40px;
-        margin-bottom: 20px;
-        margin: auto;
-    }
+
     H3 {
         color: white;
-        margin-bottom: 17px;
+        margin-bottom: 15px;
+        margin-top: 0px;
+        text-align: center;
     }
     label {
         text-align: center;
         margin-bottom: 20px;
         color: #fff;
+        margin-top: 30px;
     }
 
     input {
-        margin-bottom: 86px;
-        height: 43px;
+        margin-bottom: 16px;
+        height: 33px;
         border-radius: 30px;
         border: solid black 3px;
     }
+    
  }
 
  ul {
+    display: none;
+ }
+
+ .letter-img {
+    display: none;
+ }
+
+
+@media screen and (min-width: 1200px) {
+
+    footer {
+        height: 616px;
+        H3 {
+            color: white;
+            margin-bottom: 17px;
+            text-align: left;
+        }
+        input {
+            margin-bottom: 86px;
+            height: 43px;
+            border-radius: 30px;
+            border: solid black 3px;
+        }
+        .logo {
+            margin-top: 0px;
+        }
+    }
+
+    .letter-img {
+        display: block;
+        width: 30%;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        margin: auto;
+    }
+
+ ul {
+    display: block;
     padding: 0;
     margin-top: 0;
     li {
@@ -49,6 +91,7 @@
  }
 
  .socials {
-    margin-top: 38.2px;
+    margin-top: 0px;
  }
 
+}
