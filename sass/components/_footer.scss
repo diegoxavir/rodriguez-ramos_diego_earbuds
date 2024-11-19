@@ -33,12 +33,13 @@
         border-radius: 30px;
         border: solid black 3px;
     }
-    
+     ul {
+    display: none;
+    }
+
  }
 
- ul {
-    display: none;
- }
+
 
  .letter-img {
     display: none;
@@ -49,7 +50,7 @@
 
     footer {
         height: 616px;
-        H3 {
+        h3 {
             color: white;
             margin-bottom: 17px;
             text-align: left;
@@ -62,7 +63,17 @@
         }
         .logo {
             margin-top: 0px;
-        }
+        } 
+        ul {
+            display: block;
+            padding: 0;
+            margin-top: 0;
+            li {
+            list-style: none;
+            text-align: left;}
+            color: white;
+            font-size: 1.25em;
+            }
     }
 
     .letter-img {
@@ -73,16 +84,7 @@
         margin: auto;
     }
 
- ul {
-    display: block;
-    padding: 0;
-    margin-top: 0;
-    li {
-    list-style: none;
-    text-align: left;}
-    color: white;
-    font-size: 1.25em;
- }
+
 
  .footer-grid {
     width: 1200px;

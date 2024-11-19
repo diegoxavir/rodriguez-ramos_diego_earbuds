@@ -1,0 +1,88 @@
+@use '../abstracts/variables' as v;
+
+.hamburger-content {
+    background-color: white;
+    color: v.$primary-color;
+    height: 100vh;
+    width: 100%;
+    max-width: 1199px;
+    position: fixed;
+    margin-top: 0px;
+    right: -1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2em;
+    transition: .3s ease;
+    ul {
+        margin-bottom: 400px;
+        padding: 0;
+        li {
+            list-style-type: none;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.hamburger-content.active {
+    right: 0;
+}
+
+.hamburger {
+    height: 50px;
+    width: 40px;
+    margin-left: auto;
+    position: relative;
+    margin-right: 20px;
+    margin-top: 6px;
+}
+
+.hamburger span {
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+
+#first-span {
+    top: 25%;
+}
+
+#last-span {
+    top: 75%;
+}
+
+.hamburger.active span {
+    background-color: v.$primary-color;
+}
+
+.hamburger.active #first-span {
+top: 50%;
+transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.hamburger.active #second-span {
+    opacity: 0;
+}
+
+.hamburger.active #last-span {
+    top: 40%;
+    transform: translate(-50%, 50%) rotate(-45deg);
+}
+
+@media screen and (min-width: 1200px) { 
+    .hamburger-content {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
