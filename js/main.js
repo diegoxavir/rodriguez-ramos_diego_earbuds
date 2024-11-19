@@ -144,3 +144,17 @@
 
 
 })();
+
+(() => {
+  const burgerCont = document.querySelector('.hamburger-content');
+  const burgerIcon = document.querySelector('.hamburger');
+
+
+
+
+  burgerIcon.addEventListener('click', () => {
+    burgerIcon.classList.toggle('active');
+    burgerCont.classList.toggle('active');
+  })
+
+})();

@@ -10,7 +10,7 @@ header {
             margin-bottom: auto;
             margin-left: 20px;
         }
-        ul {
+        .desktop-ul {
             display: none;
         }
 }
@@ -20,7 +20,7 @@ header {
             .logo {
                 margin-top: auto;
             }
-                ul {
+                .desktop-ul {
             display: block;
             margin-top: 20px;
             li {
